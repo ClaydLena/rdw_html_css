@@ -1,4 +1,4 @@
-# Responsive Web Design 
+# Responsive Web Development 
 
 Este repositório é composto por um conjunto de soluções aos desafios do devChanlleges.io 
 na categoria de desenvolvimento de páginas web responsivas usando html e css. 
