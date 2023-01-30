@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <title>Interior Consultant</title>
     <link rel="shortcut icon" href="./imgs/devchallenges.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <header class="header">
         <button class="header-button">This Interior</button>
@@ -20,19 +24,33 @@
                 <li class="nav-bar-item">Contact</li>
             </ul>
         </nav>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu-icon" onclick="myFunction()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <ul id="menu" class="mobile-menu-list">
+                <li class="mobile-menu-list-item">Home</li>
+                <li class="mobile-menu-list-item">Collection</li>
+                <li class="mobile-menu-list-item">About</li>
+                <li class="mobile-menu-list-item">Contact</li>
+            </ul>
+        </div>
+
     </header>
     <main class="main-content">
         <div class="content">
             <h3 class="title">Modern interior</h3>
             <div class="text-cont">
-                <p>A full-Service residential & <br> commercial interior design and <br> staging company offering <br> professional organizing &<br> eco-services.</p>
+                <p>A full-Service residential & <br> commercial interior design and <br> staging company offering <br>
+                    professional organizing &<br> eco-services.</p>
             </div>
         </div>
-        <div class="content-img">
-            <img class="img" src="./imgs/photo1.png"/>
+        <div class="content-img" id="content-img">
+            <img class="img" src="./imgs/photo1.png" />
             <div class="content-designer">
                 <div class="designer-info">
-                    <img class="avatar-img" src="./imgs/photo2.png"/>
+                    <img class="avatar-img" src="./imgs/photo2.png" />
                     <div class="designer-desc">
                         <strong>Aliza Webber</strong>
                         <p>Interior designer</p>
@@ -42,6 +60,20 @@
             </div>
         </div>
     </main>
-    <footer class="footer"><p>created by Clayd Lena - devchallenges.io</p></footer>
+    <footer class="footer">
+        <p>created by Clayd Lena - devchallenges.io</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block" || menu.style.display === "none") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>
